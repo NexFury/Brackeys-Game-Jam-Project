@@ -33,6 +33,15 @@ public class Enemy : MonoBehaviour
         //animator.SetBool("IsDead", true);
 
         GetComponent<Collider2D>().enabled = false;
+        GetComponent<EnemyPatrol>().enabled = false;
         this.enabled = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(other.tag == "Player")
+        {
+            other.GetComponent<PlayerHealth>().TakeDamage(10);
+        }
     }
 }
