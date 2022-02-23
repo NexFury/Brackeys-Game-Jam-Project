@@ -13,44 +13,23 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
+    private void OnCollisionEnter(Collision other) 
+    {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(10);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
         
     }
 
-    public void TakeDamage(int damage)
+    void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-
-        if(currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
-    private void Die()
-    {
-        //Animate dead state or instantiate particle splatter
-        //Restart level
-    }
-
-    public void Heal(int healthPoints)
-    {
-        if(currentHealth < 100)
-        {
-            currentHealth += healthPoints;
-            healthBar.SetHealth(currentHealth);
-            if(currentHealth > 100)
-            {
-                currentHealth = 100;
-                healthBar.SetHealth(currentHealth);
-            }
-        }
-        else
-        {
-            return;
-        }
     }
 }

@@ -20,18 +20,6 @@ public class PlayerMonocle : MonoBehaviour
         
     }
 
-    public void IncrementMonocleMeter(int monocleShard)
-    {
-        monocleCounter += monocleShard;
-        UpdateMonocleMeter();
-    }
-
-    public void MonocleDestroyed()
-    {
-        monocleCounter = 0;
-        UpdateMonocleMeter();
-    }
-
     private void UpdateMonocleMeter()
     {
         if(monocleCounter == 0)
