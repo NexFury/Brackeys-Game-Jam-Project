@@ -350,6 +350,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 1816438004}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_AnimatedTarget
+      value: 
+      objectReference: {fileID: 1816438005}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -570,3 +578,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e108f08dc2d6334f885e2036b751775, type: 3}
+--- !u!4 &1816438004 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2167079172220714970, guid: 6e108f08dc2d6334f885e2036b751775, type: 3}
+  m_PrefabInstance: {fileID: 1816438003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1816438005 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2167079172220714972, guid: 6e108f08dc2d6334f885e2036b751775, type: 3}
+  m_PrefabInstance: {fileID: 1816438003}
+  m_PrefabAsset: {fileID: 0}

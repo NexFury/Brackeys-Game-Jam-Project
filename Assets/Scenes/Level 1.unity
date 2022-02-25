@@ -131,8 +131,56 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
-      propertyPath: m_ChildCameras.Array.size
-      value: 0
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 1971118628}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_AnimatedTarget
+      value: 
+      objectReference: {fileID: 1971118629}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[0].m_Hash
+      value: -1661602188
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[1].m_Hash
+      value: -722262234
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[2].m_Hash
+      value: 1286919868
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[3].m_Hash
+      value: -412990089
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[4].m_Hash
+      value: 2069122584
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[0].m_ParentHash
+      value: 756556552
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[1].m_ParentHash
+      value: 756556552
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[2].m_ParentHash
+      value: 756556552
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[3].m_ParentHash
+      value: 756556552
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647775820413341552, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
+      propertyPath: m_ParentHash.Array.data[4].m_ParentHash
+      value: 756556552
       objectReference: {fileID: 0}
     - target: {fileID: 7647775821195082270, guid: 830a28e8b03eb054aaf6abcf6c070f3d, type: 3}
       propertyPath: m_Name
@@ -570,3 +618,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e108f08dc2d6334f885e2036b751775, type: 3}
+--- !u!4 &1971118628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2167079172220714970, guid: 6e108f08dc2d6334f885e2036b751775, type: 3}
+  m_PrefabInstance: {fileID: 1971118627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1971118629 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2167079172220714972, guid: 6e108f08dc2d6334f885e2036b751775, type: 3}
+  m_PrefabInstance: {fileID: 1971118627}
+  m_PrefabAsset: {fileID: 0}
