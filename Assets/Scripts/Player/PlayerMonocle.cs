@@ -5,10 +5,15 @@ using UnityEngine.UI;
 
 public class PlayerMonocle : MonoBehaviour
 {
-    private int monocleCounter = 0;
+    public int monocleCounter = 0;
     [SerializeField] private Image monocle_0;
     [SerializeField] private Image monocle_1;
     [SerializeField] private Image monocle_2;
+
+    private void Awake() 
+    {
+        
+    }
 
     private void Start() 
     {
