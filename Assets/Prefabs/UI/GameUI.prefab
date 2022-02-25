@@ -368,6 +368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6419007022856438584}
+  - component: {fileID: 485893170}
   m_Layer: 5
   m_Name: Monocle
   m_TagString: Untagged
@@ -397,6 +398,21 @@ RectTransform:
   m_AnchoredPosition: {x: -68, y: -55}
   m_SizeDelta: {x: 250, y: 230}
   m_Pivot: {x: 1, y: 1}
+--- !u!114 &485893170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419007022856438585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95117fa7349b2640a86b165bbc5a5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monocle_0: {fileID: 6419007022418180590}
+  monocle_1: {fileID: 6419007021905405972}
+  monocle_2: {fileID: 6419007022286533667}
 --- !u!1 &6419007023306003696
 GameObject:
   m_ObjectHideFlags: 0
