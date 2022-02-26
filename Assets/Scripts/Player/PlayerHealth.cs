@@ -5,6 +5,8 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+    public int monocleCounter = 0;
+    public MonocleMeter monocleMeter;
 
     // Start is called before the first frame update
     void Start()
@@ -12,6 +14,20 @@ public class PlayerHealth : MonoBehaviour
         healthBar = FindObjectOfType<HealthBar>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        monocleMeter = FindObjectOfType<MonocleMeter>();
+        monocleMeter.UpdateMonocleMeter(monocleCounter); 
+    }
+
+    public void IncrementMonocleMeter(int monocleShard)
+    {
+        monocleCounter += monocleShard;
+        monocleMeter.UpdateMonocleMeter(monocleCounter);
+    }
+
+    public void MonocleDestroyed()
+    {
+        monocleCounter = 0;
+        monocleMeter.UpdateMonocleMeter(monocleCounter);
     }
 
     // Update is called once per frame

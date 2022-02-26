@@ -9,7 +9,7 @@ public class MonoclePickup : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            other.GetComponent<PlayerMonocle>().IncrementMonocleMeter(1);
+            other.GetComponent<PlayerHealth>().IncrementMonocleMeter(1);
             Destroy(this.gameObject);
         }
     }

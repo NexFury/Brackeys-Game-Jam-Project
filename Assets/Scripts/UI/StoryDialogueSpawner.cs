@@ -8,13 +8,13 @@ public class StoryDialogueSpawner : MonoBehaviour
 {
     [SerializeField] private TMP_Text dialogueBox;
     private float waitTime = 5f;
-    private PlayerMonocle playerMonocle;
+    private PlayerHealth playerHealth;
     [SerializeField] private BoxCollider2D levelProceed;
     [SerializeField] private Image levelProceedDirection;
 
     private void Start() 
     {
-        playerMonocle = FindObjectOfType<PlayerMonocle>();
+        playerHealth = FindObjectOfType<PlayerHealth>();
         dialogueBox.text = "Greetings, Brave Adventurer.";
         Invoke("SecondDialogue", waitTime);
     }
@@ -36,7 +36,7 @@ public class StoryDialogueSpawner : MonoBehaviour
         dialogueBox.text = "However, the beast are full of creatures lurking unknown to the common eye. Here take this monocle, it'll help you see them clearly";
         Invoke("FifthDialogue",waitTime);
         //Make monocle to 3
-        playerMonocle.IncrementMonocleMeter(3);
+        playerHealth.IncrementMonocleMeter(3);
     }
 
     private void FifthDialogue()
