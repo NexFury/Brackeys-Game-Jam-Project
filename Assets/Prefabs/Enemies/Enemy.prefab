@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  distance: 2
+  distance: 0.5
   groundDetection: {fileID: 4924435483045235436}
   whatToWalkOn:
     serializedVersion: 2

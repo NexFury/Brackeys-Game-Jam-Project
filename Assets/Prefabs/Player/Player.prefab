@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 2167079172220714966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.33, y: -2, z: 0}
-  m_LocalScale: {x: 0.68491286, y: 0.6498706, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2167079173559119905}
   - {fileID: 2167079173337389526}
@@ -82,8 +82,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
-  m_Color: {r: 0.19232757, g: 0.8584906, b: 0.028346404, a: 1}
+  m_Sprite: {fileID: 57025272137540003, guid: 4ce325159ab0b6b4c9e13dd57836c91c, type: 3}
+  m_Color: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -186,18 +186,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.031275988, y: 0.3721531}
+  m_Offset: {x: 0.03708124, y: 0.39538085}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.9375, y: 1.5625}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6068101, y: 1.2502114}
+  m_Size: {x: 0.35800266, y: 0.893111}
   m_EdgeRadius: 0
 --- !u!58 &2167079172220714964
 CircleCollider2D:
@@ -212,9 +212,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.49916756}
+  m_Offset: {x: 0.03785205, y: -0.3729934}
   serializedVersion: 2
-  m_Radius: 0.50083244
+  m_Radius: 0.4125107
 --- !u!114 &2167079172220714969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2167079172220714966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21c2d02d91b1a95419f067f1fa139326, type: 3}
   m_Name: 
