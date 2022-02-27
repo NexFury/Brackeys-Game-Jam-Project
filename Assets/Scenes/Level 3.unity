@@ -3593,8 +3593,8 @@ MonoBehaviour:
   isFlipped: 0
   climaxDialogue: {fileID: 0}
   audioSource: {fileID: 0}
-  fightClip: {fileID: 0}
-  successClip: {fileID: 0}
+  fightClip: {fileID: 8300000, guid: 56dc0d0718f9c2a458963a2524d01b84, type: 3}
+  successClip: {fileID: 8300000, guid: 75d1db9d82e7e1047b0fe7d0765b3f15, type: 3}
 --- !u!82 &2042895569
 AudioSource:
   m_ObjectHideFlags: 0
