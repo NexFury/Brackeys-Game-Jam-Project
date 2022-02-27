@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         currentHealth = maxHealth;
     }
 
@@ -18,7 +19,7 @@ public class Enemy : MonoBehaviour
         currentHealth -= damage;
 
         //Play hurt animation
-        //animator.SetTrigger("Hurt");
+        animator.SetTrigger("Hurt");
 
         if(currentHealth <= 0)
         {
@@ -30,11 +31,13 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Enemy died!!!");
         //Die Animation
-        //animator.SetBool("IsDead", true);
+        animator.SetBool("IsDead", true);
 
         GetComponent<Collider2D>().enabled = false;
         GetComponent<EnemyPatrol>().enabled = false;
+        GetComponent<Animator>().enabled = false;
         this.enabled = false;
+        Destroy(gameObject, 5f);
     }
 
     private void OnTriggerEnter2D(Collider2D other) 

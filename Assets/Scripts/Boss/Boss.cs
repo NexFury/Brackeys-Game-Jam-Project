@@ -6,6 +6,18 @@ public class Boss : MonoBehaviour
 {
     public Transform player;
     public bool isFlipped;
+    public ClimaxDialogue climaxDialogue;
+    public AudioSource audioSource;
+    [SerializeField] private AudioClip fightClip;
+    [SerializeField] private AudioClip successClip;
+
+    private void Start() 
+    {
+        audioSource = FindObjectOfType<AudioSource>();
+        audioSource.PlayOneShot(fightClip, 1f);
+        climaxDialogue = FindObjectOfType<ClimaxDialogue>();
+        Invoke("BossDie", 15f);
+    }
 
     public void LookAtPlayer()
     {
@@ -28,9 +40,16 @@ public class Boss : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player" && gameObject.GetComponent<BoxCollider2D>())
         {
             other.GetComponent<PlayerHealth>().TakeDamage(10);
         }
+    }
+
+    private void BossDie()
+    {
+        audioSource.PlayOneShot(successClip, 0.5f);
+        climaxDialogue.BossDeadDialogue();
+        Destroy(gameObject);
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -20,8 +21,16 @@ public class PlayerHealth : MonoBehaviour
 
     public void IncrementMonocleMeter(int monocleShard)
     {
-        monocleCounter += monocleShard;
-        monocleMeter.UpdateMonocleMeter(monocleCounter);
+        if(monocleCounter > 3)
+        {
+            monocleCounter = 3;
+            monocleMeter.UpdateMonocleMeter(monocleCounter);
+        }
+        else
+        {
+            monocleCounter += monocleShard;
+            monocleMeter.UpdateMonocleMeter(monocleCounter);
+        }
     }
 
     public void MonocleDestroyed()
@@ -40,6 +49,10 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        if(currentHealth < 50)
+        {
+            MonocleDestroyed();
+        }
 
         if(currentHealth <= 0)
         {
@@ -49,8 +62,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        //Animate dead state or instantiate particle splatter
-        //Restart level
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     public void Heal(int healthPoints)

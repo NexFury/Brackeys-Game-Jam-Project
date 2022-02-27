@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CreditsScene : MonoBehaviour
 {
@@ -27,5 +26,7 @@ public class CreditsScene : MonoBehaviour
         creditsPage1.SetActive(false);
         creditsPage2.SetActive(false);
         thankYouText.SetActive(true);
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(0);
     }
 }

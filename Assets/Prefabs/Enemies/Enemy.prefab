@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4924435483667677367}
   - component: {fileID: 4924435483667677362}
   - component: {fileID: 4924435483667677361}
-  - component: {fileID: 4924435483667677360}
+  - component: {fileID: 1688242204724855966}
   m_Layer: 3
   m_Name: Enemy
   m_TagString: Untagged
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa5314e486218f41a2c7b6e09d488ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1688242204724855966}
   maxHealth: 100
 --- !u!114 &4924435483667677362
 MonoBehaviour:
@@ -148,7 +148,7 @@ MonoBehaviour:
   groundDetection: {fileID: 4924435483045235436}
   whatToWalkOn:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 64
 --- !u!61 &4924435483667677361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.124580145}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -173,9 +173,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.8576238}
   m_EdgeRadius: 0
---- !u!95 &4924435483667677360
+--- !u!95 &1688242204724855966
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ Animator:
   m_GameObject: {fileID: 4924435483667677373}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f6ffd203a1b85ff4f90c338132d617ca, type: 2}
+  m_Controller: {fileID: 9100000, guid: e12d48ef69f9e684cb431b2b818e9d30, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
